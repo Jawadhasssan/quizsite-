@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+
+}
+.wrapper{
+  width: 400px;
+  height: 150px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+
+}
+.wrapper .input-data{
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #4158d0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+}
+.btn-theme{
+    color: black;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+
+    border-radius: 10px;
+margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-header{
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.my{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 1px;
+
+}
+.container{
+ 
+  justify-content: center;
+align-items: center;
+margin-left: 300px;
+}
+.card{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card-text:hover,
+.active {
+    background: #161144;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #15113b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d3d61, #413c7c, #130f38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+.card-text {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.hassan:hover,
+.active {
+  background: #161144;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #15113b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3d3d61, #413c7c, #130f38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.hassan {
+cursor: pointer;
+padding: 5px 10px;
+}
+
